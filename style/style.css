@@ -1,0 +1,152 @@
+@charset "UTF-8"; 
+
+@font-face {
+    font-family: 'Sriracha';
+    src: url(../fonte/Sriracha-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Passion';
+    src: url(../fonte/PassionOne-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'PassionBold';
+    src: url(../fonte/PassionOne-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'PassionBlack';
+    src: url(../fonte/PassionOne-Black.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Shadow';
+    src: url(../fonte/ShadowsIntoLight-Regular.ttf) format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, Sans-serif;
+    --fonte2: 'Passion', cursive;
+    --fonte3: 'PassionBlack', cursive;
+    --fonte4: 'PassionBold', cursive;
+    --fonte5: 'Sriracha', cursive;
+}
+
+html, body {
+    font-family: var(--fonte1);
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    color: white;   
+}
+
+header h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 6vw;
+}
+
+header p {
+    padding-bottom: 50px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+
+header a:hover {
+    text-decoration: underline;
+    background-color: white;
+    font-weight: bold;
+    color: black;
+
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte5);
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-top: 2em;
+    padding-bottom: 3.5em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    box-shadow: inset 6px 6px 16px 0px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+section.imagem > p {
+    text-shadow: 1px 1px 0px black;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+section#img1 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img2 {
+    background-image: url('../imagens/background002.jpg');
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 1px;
+}
+
+
+footer a {
+    display: inline-block;
+    text-decoration: none;
+    color: darkgray;
+    font-family: 'Shadow', cursive;
+    font-size: 1.2em;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
